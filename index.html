@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="code.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="GET" id="form" novalidate>
+        <p>
+            <label for="mail">
+                <span>Please enter your email address</span>
+                <input type="email" id="mail" name="mail" required minlength="8">
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+
+        <p>
+            <label for="country">
+                <span>Please enter the country you reside in</span>
+                <input type="text" id="country" name="country" required minlength="4">
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+        <p>
+            <label for="zip">
+                <span>Please enter your zip code</span>
+                <input type="text" id="zip" name="zip" required>
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+        <p>
+            <label for="password">
+                <span>Please create a password</span>
+                <input type="password" id="password" name="password" required minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+        <p>
+            <label for="passConfirm">
+                <span>Please confirm your password</span>
+                <input type="password" id="passConfirm" name="passConfirm" required>
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+        <p>
+            <button>Submit</button>
+        </p>
+    </form>
+</body>
+</html>
